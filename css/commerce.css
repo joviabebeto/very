@@ -20,7 +20,7 @@ nav {
 
   
   color: #080808;
-  background-color: rgb(94, 94, 88); 
+  background-color: rgb(99, 99, 94); 
   padding: 2rem;
   display: flex;
   z-index: 9999;
@@ -654,7 +654,7 @@ p {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color: white;
+  background-color: rgb(255, 251, 251);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -662,7 +662,7 @@ p {
   flex-basis: 45%;
   padding: 10px;
   margin-bottom: 20px;
-  background-color: #f3f3f3;
+  background-color: #fff6f6;
 }
 
 .card h2,
@@ -682,8 +682,8 @@ p {
 }
 
 footer {
-  background-color: #2c2929;
-  color: rgb(246, 246, 255);
+  background-color: #2c2727;
+  color: rgb(229, 229, 235);
   text-align: center;
   padding: 10px;
 }
