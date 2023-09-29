@@ -24,13 +24,8 @@ nav {
   padding: 2rem;
   display: flex;
   z-index: 9999;
-  /* position: -webkit-sticky; */
-  /* position: sticky;
-  top: 0; */
   scroll-behavior: smooth;
-  /* width: 100%; */
- 
-  
+
   box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.116);
   justify-content: space-between;
   align-items: center;
