@@ -687,7 +687,138 @@ footer {
   text-align: center;
   padding: 10px;
 }
+.spinner{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  transform: translate(-50%,-50%);
+  border: solid rgb(177, 174, 174);
+  border-top: 4px solid blueviolet;
+  display: none;
+  
+  
+}
+.like-container{
 
+  
+  display: flex;
+  gap: 1rem;
+  padding: 3rem;
+  font-size: 1.5rem;
+}
+.admin-container{
+  border: 1px solid green;
+  width: 100%;
+}
+.admin-heading{
+  text-align: center;
+  border-bottom: 1px solid gold;
+  padding: 2rem;
+  font-size: 2.5rem;
+
+}
+.link-content{
+ display: grid;
+ grid-template-columns: 15% 80%;
+ width: 100%;
+}
+.nav-admin{
+  background-color: #afa0a0;
+}
+.a
+.singleNewsContainer{
+ 
+  
+  padding: 3rem;
+  font-size: 1.5rem;
+}
+.link-content{
+  display: grid;
+  grid-template-columns: 15% 80%;
+  width: 100%;
+ }
+.admin-links{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+.admin-links li{
+  padding: 1.6rem;
+  width: 100%;
+  text-align: center;
+}
+.admin-links a{
+ font-size: 1.5rem;
+ text-decoration: none;
+ color: rgb(0, 0, 0);
+}
+.admin-links li:hover{
+  background-color: rgb(141, 158, 175);
+  color: rebeccapurple;
+}
+.table-admin{
+  padding: 1.5rem;
+ }
+ .tableusers{
+   
+   width: 800px;
+   margin: 5rem auto;
+   border-collapse: collapse;
+ }
+ tr,
+ th,
+ td{
+   border: 1px solid rgb(17, 12, 12);
+   padding: 1.5rem;
+   font-size: 1.8rem;
+ }
+ .Post {
+   font-size: 1.4rem;
+   margin: 2rem;
+   text-align: right;
+ }
+ .likeNews{
+ font-size: 1.5rem;
+  display: flex;
+  gap: 2rem;
+   padding: 2rem;
+ }
+ .newsForm {
+   width: 800px;
+   margin: 5rem auto;
+ }
+ .newsForm input {
+   margin-bottom: 1.5rem;
+ }
+ .table{
+ 
+     width: 800px;
+     margin: 5rem auto;
+     border-collapse: collapse;
+   
+ }
+ .category{
+   padding: 3rem;
+   margin: 5rem auto;
+   border-collapse: collapse;
+ }
+ .commentNews{
+   font-size: 1.5rem;
+   display: flex;
+   gap: 1rem;
+ }
+ .getAllNews{
+   padding: 3rem;
+   margin: 5rem auto;
+   border-collapse: collapse;
+ }
   
  
 
