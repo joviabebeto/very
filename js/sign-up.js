@@ -1,24 +1,31 @@
-let username=document.getElementById("username")
-let email=document.getElementById("email")
-let password=document.getElementById("password")
-let form=document.querySelector("form")
-let users=JSON.parse(localStorage.getItem(" users")) || []
+let form=document.querySelector(".signups");
+
 form.addEventListener("submit",(e)=>{
-    e.preventDefault()
-    let user={
-        name:username.value,
-        email:email.value,
-        password:password.value,
-    }
-   
-    if(users.find((used)=>used.email==email.value)){
-        alert("used for alread to exist")
-    }
-    else{
-        users.push(user);
-        alert("user successfuly to created!")
-        const stringfy=JSON.stringify(users)
-        localStorage.setItem("users",stringfy)
-        console.log(localStorage)
-    }
+    e.preventDefault();
+    let userName=document.querySelector("#userName").value;
+    let email=document.querySelector("#email").value;
+    let password=document.querySelector("#password").value;
+    const data={
+        userName,
+        email,
+        password,
+    };
+    const setPostman={
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json",
+        },
+        body:JSON.stringify(data),
+
+    };
+    fetch(`https://sore-snaps-clam.cyclic.app/api/v1/user`,setPostman)
+    .then((response)=>{
+        return response.json();
+    })
+.then((data)=>{
+    alert(data.message);
 })
+.catch((err)=>{
+    alert(err);
+});
+});
